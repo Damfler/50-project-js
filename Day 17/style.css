@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;400&display=swap");
 
 :root {
   --primary-color: #22254d;
@@ -11,7 +11,7 @@
 
 body {
   background-color: var(--primary-color);
-  font-family: "Poppins", "sans-serif";
+  font-family: "Roboto", "sans-serif";
   margin: 0;
 }
 
@@ -83,9 +83,6 @@ main {
 .movie-info span.green {
   color: lightgreen;
 }
-.movie-info span.orange {
-  color: orange;
-}
 .movie-info span.red {
   color: red;
 }
@@ -99,9 +96,10 @@ main {
   right: 0;
   max-height: 100%;
   transform: translateY(101%);
-  transition: transform .3s ease-in;
+  transition: transform 0.3s ease-in;
 }
 
 .movie:hover .overview {
   transform: translateY(0);
+  overflow: auto;
 }
