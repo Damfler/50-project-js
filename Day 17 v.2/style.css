@@ -110,21 +110,6 @@ body {
     opacity: .6;
 }
 
-.details .rating {
-    position: relative;
-    margin-bottom: 15px;
-    display: flex;
-    gap: .25em;
-}
-
-.details .rating i {
-    color: #e3c414;
-}
-
-.details .rating span {
-    margin-left: 0.25em;
-}
-
 .details .tags {
     display: flex;
     gap: .375em;

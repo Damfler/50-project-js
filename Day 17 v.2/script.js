@@ -20,7 +20,7 @@ function showAnimes(animes) {
     main.innerHTML = ''
 
     animes.forEach((anime) => {
-        const { names, posters, status, description, genres } = anime
+        const { names, posters, status, description, genres, season, type } = anime
 
         const animeEl = document.createElement('div')
         animeEl.classList.add('movie')
@@ -29,7 +29,7 @@ function showAnimes(animes) {
         genres.forEach((tag) => {
             tagHtml += '<span class="tag">' + tag + '</span>'
         })
-        console.log(tagHtml);
+        
         animeEl.innerHTML = `
         <div class="card">
         <div class="poster">
@@ -40,15 +40,7 @@ function showAnimes(animes) {
         </div>
         <div class="details">
           <h1>${names.ru}</h1>
-          <h2>2021 • PG • 1hr 38min</h2>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <span>4.2/5</span>
-          </div>
+          <h2>${season.year} • ${type.full_string}</h2>
           <div class="tags">
             ${tagHtml}
           </div>
