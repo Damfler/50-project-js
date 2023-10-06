@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const quizData = [
 	{
 		question: 'Which language runs in a web browser?',
@@ -96,3 +97,16 @@ submitBtn.addEventListener('click', () => {
 		}
 	}
 });
+=======
+const open_btn = document.querySelector('.open-btn')
+const close_btn = document.querySelector('.close-btn')
+const nav = document.querySelectorAll('.nav')
+
+open_btn.addEventListener('click', () => {
+    nav.forEach(nav_el => nav_el.classList.add('visible'))
+})
+
+close_btn.addEventListener('click', () => {
+    nav.forEach(nav_el => nav_el.classList.remove('visible'))
+})
+>>>>>>> e45422baac2275b075fc6cf5bb58b3a11ccbf20d
